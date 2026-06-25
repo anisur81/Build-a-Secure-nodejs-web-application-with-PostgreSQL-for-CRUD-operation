@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/style_common_header.css">
+	<link rel="stylesheet" href="/css/style_base.css">
+    <title>Students</title>
+</head>
+<body>
+
+<%- include('partials/header') %>
+
+<h1>Student List</h1>
+
+<a href="/add">Add Student</a>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>RollNo</th>
+    <th>Age</th>
+</tr>
+
+<% students.forEach(student => { %>
+
+<tr>
+    <td><%= student.id %></td>
+    <td><%= student.name %></td>
+    <td><%= student.rollno %></td>
+    <td><%= student.age %></td>
+</tr>
+
+<% }) %>
+
+</table>
+
+</body>
+</html>

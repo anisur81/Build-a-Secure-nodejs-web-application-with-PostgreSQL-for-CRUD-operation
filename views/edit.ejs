@@ -1,0 +1,41 @@
+<h1>Edit Contact Request</h1>
+
+<form action="/update/<%= conreq.id %>" method="POST">
+
+    <input type="text"
+           name="orgtitle"
+           value="<%= conreq.orgtitle %>"
+           required>
+
+    <br><br>
+
+    <input type="text"
+           name="phoneno"
+           value="<%= conreq.phoneno %>"
+           required>
+
+    <br><br>
+
+    <input type="email"
+           name="email"
+           value="<%= conreq.email %>"
+           required>
+
+    <br><br>
+
+    <input type="text"
+           name="address"
+           value="<%= conreq.address %>"
+           required>
+
+    <br><br>
+
+    <textarea name="comment" required><%= conreq.comment %></textarea>
+
+    <br><br>
+
+    <button type="submit">
+        Update
+    </button>
+
+</form>

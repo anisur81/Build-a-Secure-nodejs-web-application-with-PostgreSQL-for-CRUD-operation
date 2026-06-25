@@ -1,0 +1,16 @@
+.full-width-table {
+  width: 100%;             /* Stretches to full width */
+  border-collapse: collapse; /* Removes gaps between borders */
+  table-layout: fixed;      /* Forces equal column widths */
+}
+
+.full-width-table th, 
+.full-width-table td {
+  border: 1px solid #ddd;   /* Light gray border */
+  padding: 12px;            /* Internal spacing */
+  text-align: left;         /* Aligns text to the left */
+}
+
+.full-width-table thead {
+  background-color: #f2f2f2; /* Light header background */
+}

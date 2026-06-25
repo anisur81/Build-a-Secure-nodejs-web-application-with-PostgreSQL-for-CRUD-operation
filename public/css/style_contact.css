@@ -1,0 +1,109 @@
+/* CONTACT BANNER */
+.contact-banner{
+    background: linear-gradient(135deg, #0e4bcf, #092450);
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glow effect */
+.contact-banner::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background: radial-gradient(circle, rgba(6,182,212,0.20), transparent 60%);
+    transform: rotate(25deg);
+}
+
+/* Content Layer */
+.banner-content{
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading */
+.contact-banner h1{
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    color: #22c55e;
+    text-transform: uppercase;
+}
+
+/* Paragraph */
+.contact-banner p{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #e2e8f0;
+    max-width: 760px;
+    margin: auto;
+}
+
+
+
+/* Card - glassmorphism style */
+.card{
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding:22px 20px;
+    border-radius:14px;
+    margin-bottom:16px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.25);
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover{
+    transform: translateY(-5px);
+    border-color:#38bdf8;
+    box-shadow:0 12px 30px rgba(56,189,248,0.25);
+}
+
+/* Label */
+.label{
+    color:#94a3b8;
+    font-size:13px;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+
+/* Value */
+.value{
+    font-size:18px;
+    text-align: center;
+    margin-top:6px;
+    color:#94a3b8;
+    font-weight:600;
+}
+
+/* Links */
+a{
+    color:#38bdf8;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#0ea5e9;
+    text-decoration:underline;
+}
+
+
+.section_gap{
+    margin-bottom:60px;
+    padding-bottom:60px;
+    border-bottom:1px solid #999;
+}
